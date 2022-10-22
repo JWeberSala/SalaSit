@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="shortcut icon" href="img\corazon-saludable.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/989464ad2b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <title>SalaSituacion</title>
+</head>
+
+<body>
+    <div class="padre">  
+    <header >
+            <div class="menu">
+                <div class="logo"> 
+                    <a href="index.html"><img src="img/logo_er.png" alt=""></a>
+                </div>
+                   
+                <div class="titulo">Sala de Situación de Salud</div>
+    
+                <div >
+                    <a class="nav" href="index.html">Inicio</a>
+                    <a class="nav" href="nosotros.html"> <i class="fa-sharp fa-solid fa-house"></i>Nosotros</a>
+                    <a class="nav" href="#"> <i class="fa-sharp fa-solid fa-truck-fast"></i>Indicadores</a>
+                    <a class="nav" href="#"><i class="fa-sharp fa-solid fa-envelope"></i>Contacto</a>
+                </div>
+    
+            </div>  
+            
+    </header>
+    <section class="form-r">
+        <form class="fcontacto" name='fcontacto' action="destino.html">
+        <fieldset>
+            <legend><b class="encabezado1">Contacto</b></legend>
+            <label for="Nombre" class="label1">Nombre</label>
+            <input name ="nombre" class="nombre" type="text"  placeholder="Ingrese su nombre" size="30" maxlength="30" autofocus required> <br><br>
+            <label for="Apellido" class="label1">Apellido</label>
+            <input name="apellido" class="apellido" type="text"  placeholder="Ingrese su apellido" size="30" maxlength="30" required><br><br>
+            <label for="Email" class="label1">Email</label>
+            <input name="email" class="email" type="email" size="33" maxlength="35" placeholder="aaaaaa@Gmail.com" required> <br> <br>
+            <label for="Consultas" class="label1"><b class="consulta1">Cual es su Consulta</b></label><br>
+            <textarea name="consulta" class="consulta" cols="38" rows="10"   placeholder="Ingrese su consulta" required></textarea><br><br>
+            <input class="boton" type="submit" value="Enviar" id="botonEnviar" onclick="validacion_al_enviar_datos()"/>
+            <input class="boton" type="reset" value="Borrar" id="botonBorrar">
+            </fieldset>
+            </form>
+    </section>
+    <footer >
+        <div class="social">
+            <div><a class="redes" href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div><a class="redes" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+        <div class="social">Derechos Reservados</div>
+        
+
+  </footer>
+
+  <script src="js/main.js"></script>
+  </body>
+  </html>

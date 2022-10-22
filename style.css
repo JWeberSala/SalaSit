@@ -1,0 +1,291 @@
+
+.padre{
+       display: flex;
+       flex-flow: column nowrap;  /* nowrap para que se adapte al tamaño estblecido */
+       margin: 10px;
+       font-family: 'PT Serif', serif;
+     }
+
+a{
+   text-decoration: none;
+   }
+   
+
+
+header{
+       display: flex;
+       flex-flow: column nowrap; 
+       background-position:center;
+       background-attachment: contain;
+       background-color:yellowgreen;
+       height: 60px;
+       margin-bottom: 10px;
+       
+    }
+
+
+.header-logo {
+   float: left;
+   
+}
+
+   .menu{
+       display: flex;
+       flex-flow: row nowrap;
+       align-items: center;
+       justify-content: space-between;
+       padding: 20px;
+       }
+
+
+
+    .logo{
+         color: white;
+         
+      }
+      
+       
+    .titulo{
+         font-size: 25px;
+         color: white;
+         font-family: 'Kanit', sans-serif;
+     }
+
+
+
+   .nav{
+         color:white;
+         padding: 0px 15px;
+   }
+
+
+     .nav:hover{
+      color: #343434; 
+     } 
+
+
+
+
+
+section{
+       display: flex;
+         
+}
+
+
+     aside{
+       width: 30%;
+       background-color: darkgrey;
+       margin: 0px 10px 0px 0px;
+       padding: 10px;
+     }
+
+
+
+    .indicadores{
+       display: flex;
+       flex-flow: row wrap;  
+       justify-content: space-around;
+       background-color:darkseagreen;
+       margin: 0px 0px 0px 10px;
+       padding: 10px;
+       width: 70%;
+    }
+
+      article{
+           /* flex: 1 1 45%; */
+            width: 45%;
+            min-height: 100px;
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            background: #ececec;
+            margin: 10px;
+            align-items: center;
+      }
+
+           .titulo_indicadores{
+              text-align: center;
+           } 
+
+
+           article img{
+            width: 100%; 
+           }
+           
+           article p{
+                   font-size: 15px;
+                   text-align: justify;
+                   padding: 10px;
+           }
+
+          .link{
+                    color:#fff;
+                    font-size: 13px;
+                    padding: 10px;
+                    background: #000;
+                    padding: 10px;
+                    display: inline-block; 
+                    margin-bottom: 0px;
+              }
+
+          .link:hover{
+                   background-color: #546cc3;
+              }
+
+         article img{
+               width: 100%;
+               
+              }
+
+
+footer{
+      background:yellowgreen;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+       margin-top: 10px;
+       
+}
+          
+    .social{
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+     }
+
+      .redes{
+            color:darkslategray;
+            padding: 0px 15px;
+      }
+
+         .redes:hover{
+            color: #000;
+            font-size: 20px;
+            
+         }
+
+
+
+ /* estilos para monitor de vacunas */
+ 
+ .articuloCol{
+   display: flex;
+   flex-flow: column wrap;  
+   align-items: center;
+   background-color: darkseagreen;
+   margin: 0px; 
+   padding: 10px;
+   width: 100%;
+}
+
+
+
+.articuloCol article{
+   width: 60%;
+}
+.form-r{
+display: flex;
+background-color: darkseagreen;
+padding: 30px;
+margin: left;
+margin-top: 5px;
+border-radius: 4px;
+}
+.label1{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+color: #000;
+}
+.controls{
+width: 250px;
+background: #ececec;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 16px;
+border: 1px solid black
+}
+.consulta1{
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.consulta2{
+   width: 60%;
+   padding: 0;
+   
+}
+.boton{
+height: 50px;
+width: 70px;
+margin-top: 10px;
+margin-right: 15px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding: 12px;
+font-size: 13px;
+background-color:#ececec;
+border-radius: 8px;
+transition: 0.6s;
+}
+#botonEnviar:hover{
+background-color: green;
+}
+#botonBorrar:hover{
+background-color: red;
+}
+.encabezado1{
+   font-size: 22px;
+   margin-bottom: 20px;
+}
+.interno{
+   width: 100%;
+}
+
+
+
+
+
+@media  (max-width:800px){
+   .titulo{
+      font-size: 15px;
+  }
+  .nav{
+   font-size: 12px;
+  }
+
+}
+
+
+
+@media  (max-width:670px){
+        article{
+         width: 80%;
+        }
+     
+}
+
+
+@media  (max-width:450px){
+    header{
+      height: 100px;
+      margin: 10px 0px;
+    }
+   
+   .menu{
+      flex-flow: column nowrap;
+      
+      }
+    
+   section{
+      flex-flow: column nowrap;
+      margin: 10px 0px;
+   }
+
+   aside{
+      width: 90%; 
+      background-position: center;
+      margin-bottom: 10px;
+      
+    }
+
+   .indicadores{
+      width: 90%;
+   } 
+}

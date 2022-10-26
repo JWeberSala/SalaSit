@@ -161,7 +161,144 @@ footer{
             
          }
 
+/* estilos para formulario */
+form {
+   box-sizing: border-box;
+   max-width: 100%;
+   width: 420px;
+   padding: 0 15px;
+   margin: 15px auto 50px;
+ }
 
+.form-group {
+   margin-top: 1.6rem;
+   position: relative;
+   min-height: 3rem;
+   line-height: 3rem;
+}
+ 
+form div {
+   margin: 0 0 20px 0;
+}
+
+label.movable {
+   position: absolute;
+   pointer-events: none;
+   top: 0;
+   z-index: 2;
+   height: 3rem;
+   line-height: 3rem;
+   color: darken(#d8dbe8,10%);
+   padding: 0 15px;
+   font-size: 1rem;
+   font-weight: 400;
+   transition: all 0.2s;
+ }
+
+ .form-field {
+   border: 1px solid #9caaea;    
+   transition-property: border;
+   box-shadow: 0 8px 8px -4px lightblue;
+   transition-duration: 0.2s;
+ }
+
+ .form-field, .form-submit {
+   color: inherit;
+   display: block;
+   position: relative;
+   z-index: 1;
+   font-size: inherit;
+   width: 100%;
+   box-sizing: border-box;
+   border-radius: 4px;
+   background: white;
+   padding: 12px 15px;
+   min-height: 3rem;
+ }
+
+
+
+form input {
+   display: inline-block;
+   height: 20px;
+   min-width: 100px;
+   width: 180px;
+}
+
+form textarea {
+   display: inline-block;
+   resize: vertical;
+}
+
+.form-submit {
+   background: yellowgreen;
+   color: white;
+   font-weight: 600;
+   font-size: 1.2rem;
+   border: 0;
+   transition: all 0.2s;
+   cursor: pointer;
+}
+
+.form-submit:hover {
+   background: #03da8b;
+   transform: translateY(-3px);;
+}
+
+.form-submit:active {
+   transform: translate(0);
+}
+
+.input-error {
+   border: 2px solid #f15252;
+   background: #f9c9c9;
+   transition: color 0.2s;
+   box-shadow: 0 2px 10px fade(black,10%);
+   
+}
+
+.has-icon::before {
+     font-family: "FontAwesome";
+     position: absolute;
+     line-height: 3rem;
+     top: 0;
+     left: 0;
+     width: 3rem;
+     text-align: center;
+     z-index: 2;
+     color: darken(#d8dbe8,10%);
+     pointer-events: none;
+     transition: color 0.2s;
+     animation: none;
+   }
+
+.form-field, label.movable  {
+       padding-left: 3rem;
+     }
+
+label.movable {
+       top: -1.5rem;
+       height: 1rem;
+       line-height: 1.5rem;
+       font-size: 0.8rem;
+       font-weight: 600;
+       padding-left: 0;
+}
+
+.has-icon::before {
+   font-family: "FontAwesome";
+   position: absolute;
+   line-height: 3rem;
+   top: 0;
+   left: 0;
+   width: 3rem;
+   text-align: center;
+   z-index: 2;
+   color: #b8bdd5;
+   pointer-events: none;
+   transition: color 0.2s;
+   animation: none;
+ }
 
  /* estilos para monitor de vacunas */
  

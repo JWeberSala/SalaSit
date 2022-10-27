@@ -83,7 +83,7 @@ section{
        flex-flow: row wrap;  
        justify-content: space-around;
        background-color:darkseagreen;
-       margin: 0px 0px 0px 10px;
+       margin: 0px 0px 0px 0px;
        padding: 10px;
        width: 70%;
     }
@@ -377,33 +377,42 @@ background-color: red;
 
 @media  (max-width:850px){
    .titulo{
-      font-size: 15px;
-  }
+      font-size: 20px;
+   }
   .nav{
    font-size: 12px;
   }
-
+  article{
+   width: 80%;
+  }
 }
 
 
 
 @media  (max-width:670px){
-        article{
-         width: 80%;
-        }
  
-      .logo a img {
-         width: 60%; height: 60%;
-      } 
+   .logo a img {
+      width: 60%; height: 60%;
+   } 
 
-      .titulo{
-         font-size: 12px;
-     }
-     .nav{
+   .titulo{
       font-size: 12px;
-     }
-   
-
+   }
+   .nav{
+      font-size: 12px;
+   }
+   section{
+      flex-flow: column nowrap;
+    }
+   aside{
+      width: 95%; 
+      margin-bottom: 10px;
+   }
+   .indicadores{
+      width: 95%;
+      margin-bottom: 10px;
+      margin-right: 20px;
+   } 
 }
 
 
@@ -415,24 +424,21 @@ background-color: red;
    
    .menu{
       flex-flow: column nowrap;
-      
-      }
+   }
     
    section{
       flex-flow: column nowrap;
-      margin: 10px 0px;
    }
 
    aside{
       width: 95%; 
-      background-position: center;
       margin-bottom: 10px;
-      margin-right: 0px;
-      
     }
 
    .indicadores{
-      width: 90%;
+      width: 95%;
+      margin-bottom: 10px;
+      margin-right: 20px;
    } 
 }
 

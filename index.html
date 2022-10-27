@@ -21,19 +21,34 @@
 <body>
 <div class="padre">  
 <header >
-        <div class="menu">
+        <div id= "menu" class="menu">
            <div class="logo"> 
                 <a href="index.html"><img src="img/logo_er.png" alt="" width="48px" height="38px"></a>
             </div>  
                
             <div class="titulo">Sala de Situación de Salud</div>
-
-            <div >
+            <nav class="header-menubar">
+            <div id="menu-desktop">
                <a class="nav" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
                <a class="nav" href="nosotros.html"> <i class="fa-solid fa-users"></i> Nosotros</a>
                <a class="nav" href="#"> <i class="fa-solid fa-file-medical"></i> Indicadores</a>
                <a class="nav" href="contacto.html"><i class="fa-sharp fa-solid fa-envelope"></i> Contacto</a>
            </div>
+           <div id="menu-mobile">
+            <div id="burguer">
+                <span class="line1"></span >
+                <span class="line2"></span >
+                <span class="line3"></span >
+            </div>
+            <div>
+               <a class="nav" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+               <a class="nav" href="nosotros.html"> <i class="fa-solid fa-users"></i> Nosotros</a>
+               <a class="nav" href="#"> <i class="fa-solid fa-file-medical"></i> Indicadores</a>
+               <a class="nav" href="contacto.html"><i class="fa-sharp fa-solid fa-envelope"></i> Contacto</a>
+
+            </div>
+            </div>
+            </nav>
         </div>  
 </header>
 
@@ -121,8 +136,8 @@
 
   <footer >
         <div class="social">
-            <div><a class="redes" href="#"><i class="fa-brands fa-facebook"></i></a></div>
-            <div><a class="redes" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div><a class="redes" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+            <div><a class="redes" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
         </div>
         <div class="social">Derechos Reservados</div>
 
@@ -130,5 +145,8 @@
 
 
 </div>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>

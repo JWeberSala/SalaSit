@@ -325,6 +325,49 @@ label.movable {
 .articuloCol article{
    width: 60%;
 }
+
+
+/* estilos para html indicadores */
+ 
+.defIndic{
+   display: flex;
+   flex-flow: column wrap;  
+   align-items: center;
+   background-color: darkseagreen; 
+   margin: 0px; 
+   width: 100%;
+   justify-content: space-around;
+ /*  padding: 10px; */
+       
+}
+
+.defIndic article{
+   width: 80%;
+   background-color:darkseagreen;
+   color: #fff;
+}
+
+.defIndic article:hover {
+   transform:scale(1, 1);
+   -webkit-transform:scale(1,1);
+   -ms-transform:scale(1,1);
+   border-radius: 25px; 
+}
+
+.defIndic article p {
+        padding: 0px;
+        font-size: 15px;
+             }
+
+
+.defIndic article ul{
+   font-size: 15px;
+}
+
+
+
+
+
 .form-r{
 display: flex;
 background-color: darkseagreen;
